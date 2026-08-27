@@ -6,7 +6,7 @@ read -p " Hello sir. what the file name you want me to check if exist ? " file
        
               echo " the file $file exist "
               echo " the systeme will shutdown in 1 minute !! "
-              sleep 60
+              sleep 30
               sudo systemctl poweroff -i
               break
               
@@ -14,7 +14,7 @@ read -p " Hello sir. what the file name you want me to check if exist ? " file
        
               echo " file exist but empty "
               echo " the systeme will shutdown in 1 minute !! "
-              sleep 60
+              sleep 30
               sudo systemctl poweroff -i
               break
        else
