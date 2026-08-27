@@ -2,7 +2,7 @@
 
 read -p " Hello sir. what the file name you want me to check if exist ? " file
  while true; do
-       if [[ -f "$file" && -s "$file" ]] : then
+       if [[ -f "$file" && -s "$file" ]]; then
        
               echo " the file $file exist "
               echo " the systeme will shutdown in 1 minute !! "
@@ -10,7 +10,7 @@ read -p " Hello sir. what the file name you want me to check if exist ? " file
               sudo systemctl poweroff -i
               break
               
-       elif [ -f "$file" ];then 
+       elif [ -f "$file" ]; then 
        
               echo " file exist but empty "
               echo " the systeme will shutdown in 1 minute !! "
