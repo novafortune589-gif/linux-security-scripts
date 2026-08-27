@@ -5,7 +5,7 @@ read -p " Hello sir. what the file name you want me to check if exist ? " file
        if [[ -f "$file" && -s "$file" ]]; then
        
               echo " the file $file exist "
-              echo " the systeme will shutdown in 1 minute !! "
+              echo " the systeme will shutdown in 30 seconds ! "
               sleep 30
               sudo systemctl poweroff -i
               break
