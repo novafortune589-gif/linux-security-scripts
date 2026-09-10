@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -r -p "type the name of the file: " filename # takes the file name
+read -r -p "Type the name or path of the file: " filename # takes the file name or the full path to the file 
 
 filename=${filename,,}   # convert to lowercase
 
